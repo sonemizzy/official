@@ -1,0 +1,459 @@
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ 
+ body {
+ 	font-family: sans-serif;
+ 	background: white;
+ }
+ 
+ header {
+ 	height: 70vh;
+ 	width: 100%;
+ 	z-index: 10;
+ }
+ 
+ nav {
+ 	position: sticky;
+ 	background: black;
+ 	height: 10vh;
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	z-index: 100;
+ 	align-items: center;
+ 	}
+ 
+ 	 .title {
+ 	display: flex;
+ 	width: 70%;
+ 	align-items: center;
+ 	margin-top: 8px;
+ }
+ .title h3 {
+ 	color: white;
+ 	font-size: 17px;
+ 	text-align: center;
+ 	margin: 0 auto;
+ 	text-transform: uppercase;
+ 	letter-spacing: 0.2rem;
+ 	font-family: 'Montserrat', serif;
+ 	font-weight: 200;
+ }
+ .title h3 span {
+ 		color: dodgerblue;
+ 		font-weight: bold;
+ 		font-family: 'Lato', sans-serif;
+ 	}
+ 
+ .menu-bar {
+ 	display: flex;
+ 	width: 15%;
+ 	margin: 30px;
+ }
+ 
+ 
+ 	.nav-btns {
+ 	width: 15%;
+ 	font-size: 12px;
+ 	margin-top: 14px;
+ }
+ 
+ 	.nav-btns a {
+ 	text-decoration: none;
+ }
+ 
+ 	.btn-nav-i {
+ 	color: white;
+ 	float: right;
+ 	margin-right: 10px;
+ 	transition: 0.4s;
+ }
+ 
+ 	.btn-nav-i:hover {
+ 	color: #FF2727;
+ }
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px ; /*8px8px8px32px;*/
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.4s;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: dodgerblue;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2em;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+ #main span {
+ 	color: white;
+ 	font-size: 15px;
+ 	font-weight: bold;
+ }
+ 
+ .collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 12px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+ 
+ .active, .collapsible:hover {
+  background-color: ; /*#727272;*/
+  color: dodgerblue;
+}
+
+.contentt {
+  padding: 0px 18px;
+  background-color: black;
+  max-height: 0;
+  color: black;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+ }
+ 
+ .collapsible:after {
+  content: '+'; /*'\02795'*/ /* Unicode character for "plus" sign (+) */
+  font-size: 15px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '–'; /*"\2796";*/
+  color: white;
+  font-size: 13px;
+  }
+  
+  .banner {
+  	height: 60vh;
+  	width: 100%;
+  	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('mannnn.jpg');
+  	background-size: cover;
+  	background-position:;
+  	background-repeat: no-repeat;
+  }
+  
+  .inner {
+  	height: 100%;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+  
+  .f-text {
+  	color: white;
+  	text-align: center;
+  	letter-spacing: 0.2rem; /* 0.4rem*/
+  	font-size: 25px; /* 25 */
+  	font-family: 'Montserrat', sans-serif;
+  	text-transform: uppercase;
+  	transform: translate(0, 30px);
+  }
+  
+  .f-text span {
+  	color: dodgerblue;
+  }
+  .bread-crumbs {
+  	margin-left: 20px;
+  	margin-top: 10px;
+  }
+  .bread-crumbs a {
+  	text-decoration: none;
+  	color: grey;
+  	font-size: 13px;
+  	font-family: 'Lato', sans-serif;
+  	padding: 0;
+  }
+  
+  .headline {
+  	max-width: 310px;
+  	margin: 0 auto;
+  	margin-top: 60px;
+  	border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .headline section {
+  	font-size: 16px;
+  	text-align: center;
+  	letter-spacing: 0.003rem;
+ 	font-family: 'Montserrat', sans-serif;
+ 	line-height: 1.7;
+ }
+ section b {
+ 	text-transform: uppercase;
+ }
+ 
+ .filter {
+	margin-top: 25px;
+ 	width: 83%;
+ 	border-top: 1px solid #dbdbdb;
+ 	margin: 30px;
+ }
+ 
+  .filter-1 {
+	margin-bottom: 25px;
+ 	width: 83%;
+ 	border-bottom: 1px solid #dbdbdb;
+ 	margin: 30px;
+ }
+ 
+ .filter p {
+ 	margin-top: 20px;
+ 	background: black;
+ 	color: white;
+ 	font-size: 12px;
+ 	text-align: left;
+ 	padding: 10px 12px;
+ }
+ 
+  .filter-1 p {
+ 	margin-bottom: 20px;
+ 	background: black;
+ 	color: white;
+ 	font-size: 12px;
+ 	text-align: left;
+ 	padding: 10px 12px;
+ }
+ 
+ .filter b {
+ 	font-size: 15px;
+ 	text-align: center;
+ 	}
+ 
+ 
+ .collection {
+ 	display: flex;
+ 	width: 100%;
+ 	border:; 1px solid pink;
+ }
+ 
+ .content-1 {
+ 	width: 100%;
+ 	justify-content: ;
+ 	flex: 1;
+ 	border: ; 1px solid blue;
+ 	}
+ 
+ .content-1 img {
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	display: block;
+ }
+ 
+ .filter select {
+ 	padding: 3px 30px 3px 30px;
+ 	text-align: left;
+ 	margin-top: 25px;
+ 	margin-left: 7px;
+ 	}
+ 
+ .content-1 a {
+ 	display: flex;
+ 	align-items: center;
+ 	text-decoration: none;
+ 	justify-content: center;
+ }
+ 
+ .bttn {
+ 	font-family: 'Lato', sans-serif;
+ 	text-align: center;
+ 	color: black;
+ 	text-transform: uppercase;
+ }
+ 
+ .content-1 p {
+ 	font-size: 13px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	text-align: center;
+ }
+ 	 
+ .content-2 {
+ 	width: 100%;
+ 	flex: 1;
+ 	border: ;1px solid red;
+ 	justify-content: flex-end;
+ 	}
+ 
+ .content-2 img {
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	display: block;
+ }
+ 
+  .content-2 a {
+ 	display: flex;
+ 	align-items: center;
+ 	text-decoration: none;
+ 	justify-content: center;
+ }
+ 
+
+ .content-2 p {
+ 	font-size: 13px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	text-align: center;
+ 	margin-top: 4px;
+ }
+ 
+ .conttent {
+ 	text-align: center;
+ }
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+ .sticky + .content {
+  padding-top: 102px;
+}
+.containee {
+			display: flex;
+			justify-content: space-between;
+			font-family: 'Montserrat', sans-serif;
+			}
+		.containee div {
+			border: /* 1px solid blue;*/
+			padding: 15px;
+			}
+		.box-1 {
+			flex: 1;
+			text-align: ;
+			}
+		.box-1 p {
+			margin-left: 17px;
+			}
+		.box-2 {
+			flex: 1;
+			text-align: ;
+			}
+		.box-2 p {
+			margin-left: 30px;
+			}
+		.box-3 {
+			flex: 1;
+			text-align: ;
+			margin-left: 7px;
+			}
+		.box-4 {
+			flex: 1;
+			text-align: ;
+			}
+			.box-3 p {
+			
+			margin-left: 10px;
+			}
+		.box-3 h2 {
+			text-align: left;
+			margin-left: 10px;
+			}
+		.box-4 h2 {
+			margin-left: 30px;
+			}
+		.box-4 p {
+			margin-left: 31px;
+			}
+		.brand {
+			color: black;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			}
+		.containee p {
+			font-size: 17px;
+			line-height: 2.2;
+			}
+		.last-link {
+			text-decoration: none;
+			color: black;
+			font-size: 15px;
+			font-family: 'Montserrat', sans-serif;
+			transition: 0.4s;
+			}
+		.last-link:hover {
+			color: dodgerblue;
+			}
+			
+	.footer {
+		height: 50vh;
+		width: 100%;
+		background: black;
+		display: flex;
+		align-items: center;
+ }
+ 
+ 	.ftr-content {
+ 	margin-top: 20px;
+ 	padding: 25px;
+ }
+ 	.ftr-content p {
+ 		text-align: center;
+ 		font-size: 15px;
+ 		color: white;
+ 		font-family: 'Montserrat', sans-serif;
+ }
+ 		.footer-links {
+ 	text-align: center;
+ 	}
+ 		.footer-links a {
+ 	text-decoration: none;
+ 	letter-spacing: 0.2rem;
+ }
+		.btn-nav-f {
+ 	color: white;
+ 	font-size: 20px;
+ 	transition: 0.4s;
+ }
+ 
+ 	.btn-nav-f:hover {
+ 	color: dodgerblue;
+ }
+		.ftr-content .copyright {
+			font-family: 'Lato', sans-serif;
+		}
+	.ftr-content .copyright p {
+		font-family: 'Lato', sans-serif;
+		}
